@@ -1,0 +1,21 @@
+/* Misc Files */
+.DS_Store
+
+/* Editor Files */
+*.sw[a-z]
+*.orig
+
+/* Packages */
+node_modules/
+lib/
+vendor/
+
+/* Node/NPM */
+*.log
+
+/* Static Assets */
+.tmp/
+www/
+
+/* Config */
+config/localSettings.js
