@@ -3,7 +3,7 @@
  * @example
  * var localConfig = require('./config').localSettings()
  */
-module.exports = function() {
+module.exports = function () {
 	return {
 		host: 'localhost',
 		port: 8000

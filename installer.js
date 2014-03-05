@@ -9,14 +9,14 @@ var npmInstall = [
 ];
 
 var dependencies = [
-	'bower', 'jshint', 'grunt-cli', 'forever'
+	'bower', 'jshint', 'gulp', 'forever'
 ];
 
 var children = [];
 
-dependencies.forEach(function(dep) {
+dependencies.forEach(function (dep) {
 	var child = sudo(npmInstall.concat([dep]), options);
-	child.stdout.on('data', function(data) {
+	child.stdout.on('data', function (data) {
 		console.log(data.toString());
 	});
 	children.push(child);
